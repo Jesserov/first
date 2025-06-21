@@ -1,0 +1,139 @@
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+  }
+
+  aside {
+    width: 260px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .sidebar-top,
+  .sidebar-bottom {
+    padding: 0 24px;
+  }
+
+  .sidebar-top h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+  }
+
+  main {
+    flex: 1;
+    padding: 32px;
+  }
+  
+  .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .plans {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+    background-color: #eee;
+
+  }
+
+  .basic-plan {
+    background: #fff;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    flex: 1;
+  }
+
+  .business-plan {
+    background:#eee;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    flex: 1;
+  }
+
+  .enterprise-plan {
+    background: #eee;
+    border: 5px solid #eee;
+    border-radius: 10px;
+    padding: 24px;
+    flex: 1;
+  }
+
+  .plan h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+
+  .plan ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .plan ul li::before {
+    content: "✔";
+    margin-right: 8px;
+    color: green;
+  }
+
+  .plan button {
+    margin-top: 16px;
+    padding: 10px 16px;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .plan button:hover {
+    background: #ddd;
+  }
+
+  .plan .current {
+    background: #d0f0d0;
+    cursor: default;
+  }
+
+  .invoices {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  .table-invoice {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+  }
+
+  .buttons {
+    border-color: #eee;
+    color: #f9f9f9;
+  }
+
+  .invoice:first-child {
+    border-top: none;
+  }
+
+  span {color: grey;}
