@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creating a database</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Create a new database</h1>
+      </header>
+      <main>
+        <form action="post">
+          <div class="organization-database">
+            <div>
+              <label for="organization"><span>Organization</span></label>
+              <select name="organization" id="organization">
+                <option value="pixsellz">Pixsellz</option>
+              </select>
+            </div>
+
+            <div class="slash">
+              <p>/</p>
+            </div>
+
+            <div class="database">
+              <label for="dbName"><span>Database name</span></label>
+              <input type="text" placeholder="database name" id="dbName" />
+              <p class="grey">
+                Lowercase alpha-numeric characters, dashes, and underscores only
+              </p>
+            </div>
+          </div>
+
+          <div class="region-area">
+            <div class="region">
+              <p style="">Region</p>
+            </div>
+            <select name="ap-hk" id="ap-hk">
+              <option value="ap-hk">ap-east-1 Asia Pacific (Hong Kong)</option>
+            </select>
+            <!-- <p class="grey">
+              For best performance, choose a region closest to your application
+            </p> -->
+          </div>
+
+          <div class="plan-type">
+            <h2>Plan type</h2>
+
+            <section>
+              <div class="business">
+                <input type="radio" />
+                <div class="left">
+                  <div>
+                    <b>Business</b>
+                    <span
+                      style="
+                        border: 1px solid black;
+                        padding: 5px;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                      "
+                      ><b>AWS ap-east-1</b></span
+                    >
+                  </div>
+
+                  <p>Read/write-based billing for lower traffic applications</p>
+                  <p class="read-write">
+                    <b class="green">100 bilion</b> row reads and 50 million row
+                    writes
+                  </p>
+                </div>
+                <div class="right">
+                  <p><b class="colour">from $28</b></p>
+                  <p class="month">/ month</p>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div class="pro">
+                <input type="radio" />
+                <div class="left">
+                  <div>
+                    <b>Pro</b>
+                    <span
+                      style="
+                        border: 1px solid black;
+                        padding: 5px;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                      "
+                      ><b>AWS ap-east-1</b></span
+                    >
+                  </div>
+
+                  <p>Read/write-based billing for lower traffic applications</p>
+                  <p class="read-write">
+                    <b class="green">100 bilion</b> row reads and 50 million row
+                    writes
+                  </p>
+                </div>
+                <div class="right">
+                  <p><b class="colour">from $28</b></p>
+                  <p class="month">/ month</p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
