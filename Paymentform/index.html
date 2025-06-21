@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="payment-row">
+        <div class="form-section">
+          <h2>Payment details Here</h2>
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" value="Komol Kuchkarov" /><label
+            for="card"
+            >Card Details</label
+          >
+          <div class="card-input">
+            <input type="text" id="card" value="8950 9004 0000 4900" />
+            <img src="#" alt="" />
+          </div>
+          <input type="text" placeholder="MM / YY" class="month-year" />
+          <input type="text" placeholder="CVV" class="cvv" />
+
+          <div class="optional">
+            <button><strong>+ Add address or tax ID</strong></button>
+            <span style="color: #aaa">Optional</span>
+          </div>
+          <div class="terms">
+            By upgrading, you authorize Pikselz to modify your subscription
+            term, and charge, credit, and/or prorate your workspace accordingly.
+          </div>
+        </div>
+
+        <div class="summary-section">
+          <div class="summary-header">
+            <span><h2>Single</h2></span>
+            <button
+              style="
+                font-size: 12px;
+                color: #555;
+                border: none;
+                background: none;
+                cursor: pointer;
+                margin-top: -15px;
+              "
+            >
+              Change plan
+            </button>
+          </div>
+          <div class="plan-unlimited">
+            <span style="margin-right: 5px; font-weight: bold">$8.00</span>
+            <span>| Unlimited Access | Month</span>
+          </div>
+
+          <div class="plan-box">
+            <select>
+              <option>Paid monthly</option>
+            </select>
+            <div class="plan-row">
+              <span><strong>Unlimited Access</strong></span>
+              <span>$8.00</span>
+            </div>
+            <div class="plan-row">
+              <span
+                >1 User <a href="#" class="modify-link">Modify seats</a></span
+              >
+              <span>Month</span>
+            </div>
+            <hr />
+            <div class="plan-row">
+              <span><strong>Updates</strong></span>
+              <span class="free-label">Free</span>
+            </div>
+            <div class="plan-row">
+              <span
+                >Frequent updates for all current <br />
+                and new products.</span
+              >
+            </div>
+          </div>
+          <div class="total-row">
+            <span>Due today</span>
+            <span>$8.00</span>
+          </div>
+          <div
+            style="
+              font-size: 12px;
+              color: #888;
+              margin-top: 5px;
+              display: flex;
+              justify-content: right;
+            "
+          >
+            + applicable tax
+          </div>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button class="cancel-btn">Cancel</button>
+        <button class="subscribe-btn">Subscribe</button>
+      </div>
+    </div>
+  </body>
+</html>
